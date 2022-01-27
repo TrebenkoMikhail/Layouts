@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
@@ -62,6 +63,7 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_1" />
+
     <Button
         android:id="@+id/button_5"
         android:layout_width="wrap_content"
@@ -92,14 +94,15 @@
 
     <Button
         android:id="@+id/button_7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="52dp"
         android:text="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_8"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_4" />
+
     <Button
         android:id="@+id/button_8"
         android:layout_width="wrap_content"
@@ -123,10 +126,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="/"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/button_9"
+        app:layout_constraintEnd_toEndOf="@id/button_multiply"
         app:layout_constraintStart_toEndOf="@+id/button_9"
-        app:layout_constraintTop_toBottomOf="@id/button_6" />
+        app:layout_constraintTop_toBottomOf="@id/button_multiply" />
 
     <Button
         android:id="@+id/button_plus"
@@ -153,6 +156,14 @@
         app:layout_constraintTop_toBottomOf="@+id/button_9"
         app:layout_constraintStart_toEndOf="@+id/button_0"
         app:layout_constraintEnd_toEndOf="@id/button_9" />
+    <Button
+        android:id="@+id/button_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        app:layout_constraintTop_toBottomOf="@+id/button_divide"
+        app:layout_constraintStart_toEndOf="@+id/button_point"
+        app:layout_constraintEnd_toEndOf="@id/button_divide" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
